@@ -1,11 +1,35 @@
 import React from 'react';
+import videoBG from "../materials/hello.mp4"
+import Typewriter from 'typewriter-effect';
 
 const Body = () => {
   return (
-    <div className='h-screen w-screen bg-green-600'>
-      <div className='h-full w-full flex items-center justify-center'>
-        <div className='absolute top-50 left-50 bg-gray-800'></div>
-      </div>
+    <div className='w-full h-screen'>
+        <video 
+        className='w-full h-full object-cover'
+        src={videoBG} 
+        autoPlay 
+        loop 
+        muted
+        />
+        <div
+          className='absolute w-full h-full top-0 flex text-white justify-center items-center font-Bruno text-6xl'
+        >
+          <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString('Hello World!')
+                  .callFunction(() => {
+                    console.log('String typed out!');
+                  })
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .callFunction(() => {
+                    console.log('All strings were deleted');
+                  })
+                 .start();
+                }}
+            />
+        </div>
     </div>
   );
 };

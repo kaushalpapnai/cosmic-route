@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div >
-        <div className='flex justify-between w-full fixed bg-black text-white items-center'>
+        <div className='flex justify-between w-full fixed top-0 bg-black text-white items-center z-50'>
             <div className='m-5'>
               <img 
               className='h-10 w-20'
@@ -17,6 +17,7 @@ const Navbar = () => {
                 <li className='m-2' >buy now</li>
             </div>
         </div>
+
     </div>
   )
 }
