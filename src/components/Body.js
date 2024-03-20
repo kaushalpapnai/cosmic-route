@@ -13,19 +13,19 @@ const Body = () => {
         muted
         />
         <div
-          className='absolute w-full h-full top-0 flex text-white justify-center items-center font-Bruno text-4xl leading-relaxed text-center'
+          className='absolute w-full h-full top-0 flex text-white justify-center items-center font-Archivo text-4xl leading-relaxed text-center'
         >
       <TypeAnimation
       className=''
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'We are best in space tourism',
+        'WE ARE BEST IN SPACE TOURISM',
         1900, // wait 1s before replacing "Mice" with "Hamsters"
-        'We are best in sattelite launching',
+        'WE ARE BEST IN SATTELITE LAUNCHING',
         1900,
-        'We are best in interplanetarry visits',
+        'WE ARE BEST IN INTERPLANETTARY LAUNCH',
         1900,
-        'We are best in good and transport in space',
+        'WE ARE BEST IN TRANSPORT OF GOODS INTO SPACE',
         1900
       ]}
       wrapper="span"

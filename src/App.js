@@ -1,5 +1,7 @@
 import Body from "./components/Body";
 import Navbar from "./components/Navbar";
+import Sattelite from "./components/Sattelite";
+import SpaceTourConatainer from "./components/SpaceTourConatainer";
 
 
 
@@ -8,6 +10,8 @@ function App() {
     <div className="App">
       <Navbar/>
       <Body/>
+      <SpaceTourConatainer/>
+      <Sattelite/>
     </div>
   );
 }
