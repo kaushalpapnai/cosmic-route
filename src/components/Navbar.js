@@ -11,10 +11,11 @@ const Navbar = () => {
               >
               </img>
             </div>
-            <div className='flex list-none mr-5 border border-red-200'>
-                <li className='m-2'>home</li>
+            <div className='flex list-none mr-5 border border-red-200 justify-between w-1/5 '>
+                <li className='m-2 hover:bg-white hover:text-black'>home</li>
                 <li className='m-2'>contact</li>
                 <li className='m-2' >buy now</li>
+                <li className='m-2' >explore</li>
             </div>
         </div>
 
